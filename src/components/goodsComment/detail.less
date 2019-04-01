@@ -1,0 +1,77 @@
+.userBox{
+    width: 100%;
+    height: 100%;
+    .title{
+        width: 100%;
+        background: #FFF;
+        margin-top: 2px;
+    }
+    table.mytable {
+        width: 100%;
+        border: 1px solid #A2A2A2;
+        border-spacing: 0;
+        margin: 10px 0;
+        tr {
+            border-bottom: 1px solid #A2A2A2;
+            td {
+                border-right: 1px solid #A2A2A2;
+                border-bottom: 1px solid #A2A2A2;
+                padding: 5px;
+                text-align: center;
+                height: 40px;
+            }
+            td:nth-child(even) {
+                text-align: left;
+                padding-left: 10px;
+            }
+            td:last-child{ 
+                border-right: 0
+            }
+            td:nth-child(1) {
+                width: 120px;
+            }
+            td:nth-child(3) {
+                width: 120px;
+            }
+        }
+        tr:last-child {
+            td{ 
+                border-bottom: 0 
+            }
+        }
+    }
+    :global {
+        table{ 
+            th {
+                text-align: center;
+            }
+            td{
+                text-align: center;
+            }
+            .ant-card-body {
+                padding: 10px;
+
+                .ant-avatar {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 0;
+                }
+            }
+        }
+        .ant-timeline {
+            margin-top: 8px;
+            li:nth-last-child(1) {
+                padding-bottom: 0px;
+            }
+            .ant-timeline-item-content {
+                min-height: 0;
+            }
+        }
+
+        .ant-btn {
+            margin-right: 10px;
+            width: 98px;
+        }
+    }
+}
+

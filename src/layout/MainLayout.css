@@ -1,0 +1,83 @@
+.layout {
+  height: 100%;
+  overflow: hidden;
+}
+.layout :global .ant-layout-header {
+  background: #2a3b4c;
+  padding: 0 40px 0 0;
+  height: 80px;
+  line-height: 80px;
+}
+.layout :global .ant-layout-header :global span {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: #FFF;
+}
+.layout :global .ant-layout-header :global a {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: #FFF;
+}
+.layout :global .use-msgs {
+  display: inline-block;
+  padding-left: 20px;
+  width: 100%;
+  background: #2a3b4c;
+  position: relative;
+}
+.layout :global .use-msgs div {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+.layout :global .use-msgs div .anticon-bell,
+.layout :global .use-msgs div .anticon-bars,
+.layout :global .use-msgs div .anticon-user {
+  font-size: 20px;
+  color: #adb8c1;
+}
+.layout :global .use-msgs div:nth-of-type(1) {
+  cursor: pointer;
+}
+.layout :global .use-msgs div:nth-of-type(2) {
+  float: right;
+}
+.layout :global .use-msgs div:nth-of-type(3) {
+  margin-right: 20px;
+  float: right;
+}
+.layout :global .use-msgs div:nth-of-type(3) a {
+  height: 100%;
+  display: block;
+}
+.layout :global .ant-layout-content {
+  margin: 24px 16px 0;
+  padding: 24px;
+  background: #fff;
+}
+.layout :global .km-logo {
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  line-height: 80px;
+}
+.layout :global .ant-layout-sider-collapsed .anticon {
+  font-size: 16px;
+}
+.layout :global .ant-layout-sider-collapsed .nav-text {
+  display: none;
+}
+.layout :global .ant-layout-sider,
+.layout :global .ant-menu-item {
+  background: #2f4355;
+}
+.layout :global .ant-menu-item:hover {
+  background: #108ee9;
+}
+.layout :global .ant-menu-submenu-inline.ant-menu-submenu {
+  background: #2f4355;
+}

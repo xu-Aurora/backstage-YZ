@@ -1,0 +1,13 @@
+:global html,
+:global body {
+  width: auto !important;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+:global #root {
+  height: 100%;
+}
+:global .ant-calendar-column-header {
+  width: 30px !important;
+}

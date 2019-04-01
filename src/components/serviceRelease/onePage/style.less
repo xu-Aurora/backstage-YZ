@@ -1,0 +1,375 @@
+.box {
+  h3 {
+    font-weight: 600;
+  }
+  .red {
+    color: red;
+  }
+  .mytable {
+    width: 100%;
+    border: 1px solid #A2A2A2;
+    border-spacing: 0;
+    margin: 15px 0;
+    .mytable_header{
+      th:nth-child(1) {
+        width: 80px;
+      }
+      th:nth-child(3) {
+        width: 200px;
+      }
+      th:nth-child(4) {
+        width: 200px;
+      }
+      th:nth-child(5) {
+        width: 200px;
+      }
+      th:nth-child(6) {
+        width: 200px;
+      }
+      th:nth-child(7) {
+        width: 100px;
+      }
+    }
+    .mytable_header1{
+      th:nth-child(2) {
+        width: 200px;
+      }
+      th:nth-child(3) {
+        width: 200px;
+      }
+      th:nth-child(4) {
+        width: 200px;
+      }
+      th:nth-child(5) {
+        width: 200px;
+      }
+    }
+    .mytable_model{
+      display: flex;
+      justify-content: center;
+      >div{
+        flex: 1;
+        color: #377FC2;
+      }
+    }
+    tr {
+        border-bottom: 1px solid #A2A2A2;
+        word-break: break-all;
+    }
+    td {
+        padding:  10px;
+    }
+    td,th{
+      border-right: 1px solid #A2A2A2;
+      text-align: center;
+      word-break: break-all;
+      text-align: center;
+    }
+    .red {
+      color: red;
+      font-size: 18px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+
+  .set {
+    .ant-col-offset-2 {
+      margin-left: 7%;
+    }
+  }
+  margin-bottom: 150px;
+
+  .checkImg{
+    width: 104px;
+    height: 104px;
+    border: 1px dashed #cccccc;
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    >i{
+      position: absolute;
+      right: -6px;
+      top: -6px;
+    }
+    >img{
+      width: 100%;
+      height: 100%;
+    }
+    .addImg{
+      text-align: center;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .label{
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  .checkImg:nth-child(1) {
+    margin-left: 0;
+  }
+  .params{
+    display: flex;
+    margin-bottom: 20px;
+    .params_left{
+      width: 80px;
+      line-height: 32px;
+    }
+    .params_right{
+      flex: 1
+    }
+  }
+  .specification{
+    h3 {
+      font-weight: 600;
+    }
+    .Row{
+      margin-top: 8px;
+      .label{
+        text-align: right;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        height: 32px;
+        line-height: 32px;
+      }
+      .label__left{
+        width: 120px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .label__right{
+        width: 40px;
+        display: inline-block;
+        border: 1px solid #d9d9d9;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+      .label__edit{
+        width: 40px;
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #309BFF;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+      .label__content{
+        min-width: 120px;
+        display: inline-block;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
+        text-align: center;
+        vertical-align: middle;
+        height: 32px;
+        line-height: 32px;
+      }
+      .tag{
+        display: inline-block;
+        font-weight: 400;
+        font-style: normal;
+        color: #309BFF;
+        border: 1px solid rgba(48, 155, 255, 1);
+        width: auto;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        margin-right: 10px;
+        vertical-align: middle;
+        padding: 0 10px;
+
+        .del{
+          position: absolute;
+          top: -9px;
+          right: -9px;
+          line-height: 0;
+          cursor: pointer;
+          img{
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+      .add__congfig{
+        display: inline-block;
+        width: 119px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #309BFF;
+        border: 1px solid #309BFF;
+        border-radius: 5px;
+        img{
+          width: 16px;
+          height: 16px;
+          vertical-align: sub;
+          margin-right: 4px;
+        }
+        margin-right: 20px;
+      }
+    }
+    
+  }
+
+  :global {
+    .ant-card {
+      margin-bottom: 20px;
+    }
+    .ant-form-item{
+      display: flex;
+      margin-bottom: 10px;
+      padding-left: 50px;
+      .ant-form-item-label{
+        min-width: 100px;
+        text-align: left;
+      }
+      .ant-form-item-control-wrapper{
+          flex: 1;
+      }
+    }
+
+
+
+    .partLine {
+      .ant-col-offset-1 {
+        margin-left: 1%;
+      }
+    }
+    .tableLeft {
+      .ant-col-offset-1 {
+        margin-left:'1.3%'
+      }
+    }
+    .ant-card-body {
+      padding: 15px 20px;
+    }
+
+    .ant-form-item-children {
+      .ant-card-body {
+        padding: 10px;
+      }
+    }
+
+    .ant-tag {
+      height: 33px;
+      line-height: 32px;
+      padding: 0 17px;
+      border-color: rgba(48, 155, 255, 1);
+      color: rgba(48, 155, 255, 1);
+    }
+    .ant-input {
+      height: 32px;
+      line-height: 32px;
+      padding: 0 17px;
+    }
+    .ant-tabs-bar {
+      display: none;
+    }
+    .ant-tabs-nav .ant-tabs-tab {
+        background-color: #fff;
+        padding: 3px 0;
+        width: 62px;
+        text-align: center;
+        margin: 0;
+        height: 29px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .ant-tabs-ink-bar {
+        height: 0;
+    }
+    .ant-tabs-nav-wrap {
+        margin-bottom: 0;
+    }
+
+    .ant-tabs-nav>div>div:nth-child(1) {
+        border: 0;
+        font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        margin-right: 20px;
+    }
+
+    .clearfix1 {
+      width: 120px;
+      height: 40px;
+      margin-right: 0; 
+      margin-bottom: 0; 
+      .ant-upload.ant-upload-select-picture-card {
+        width: 120px;
+        height: 40px;
+        margin-right: 0; 
+        margin-bottom: 0; 
+
+        .ant-upload {
+          padding: 0;
+        }
+      }
+
+      .ant-upload-list-picture-card .ant-upload-list-item {
+        width: 120px;
+        height: 40px;
+        margin-right: 0; 
+        margin-bottom: 0; 
+      }
+      .ant-upload-list-picture-card .ant-upload-list-item {
+        padding: 0;
+      }
+      .anticon-delete {
+        display: none;
+      }
+      .ant-upload-list-picture-card .ant-upload-list-item-info:before {
+        display: none;
+      }
+      .anticon-eye-o {
+        display: none;
+      }
+    }
+
+    //规格/价格设置  样式
+    .sizeStyle {
+      .ant-btn {
+        background-color: #fff;
+        color: #333333;
+        border-color: #d9d9d9;
+        padding: 0 10px;
+      }
+    }
+  }
+  .lable:before{
+    content: '*';
+    color: red;
+  }
+}
+
+.content{
+  .openImg{
+    width: 68px;
+    height: 35px;
+    border: 1px solid rgba(201, 201, 201, 1);
+    margin: 0 auto;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+:global{
+  .resetStyle{
+    .ant-drawer-header{
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>佳优家管理平台</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <style>
+        #root {
+            width: 100%;
+            height: 100%;
+            min-width: 1600px;
+        }
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <!--[if lt IE 10]>
+    <script src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,es5-shim/4.5.7/es5-shim.min.js,es5-shim/4.5.7/es5-sham.min.js,html5shiv/3.7.2/html5shiv.min.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script language="javascript">
+    function banBackSpace(e) {
+        var ev = e || window.event;
+        //各种浏览器下获取事件对象
+        var obj = ev.relatedTarget || ev.srcElement || ev.target || ev.currentTarget;
+        //按下Backspace键
+        if (ev.keyCode == 8) {
+            var tagName = obj.nodeName //标签名称
+                //如果标签不是input或者textarea则阻止Backspace
+            if (tagName != 'INPUT' && tagName != 'TEXTAREA') {
+                return stopIt(ev);
+            }
+            var tagType = obj.type.toUpperCase(); //标签类型
+            //input标签除了下面几种类型，全部阻止Backspace
+            if (tagName == 'INPUT' && (tagType != 'TEXT' && tagType != 'TEXTAREA' && tagType != 'PASSWORD')) {
+                return stopIt(ev);
+            }
+            //input或者textarea输入框如果不可编辑则阻止Backspace
+            if ((tagName == 'INPUT' || tagName == 'TEXTAREA') && (obj.readOnly == true || obj.disabled == true)) {
+                return stopIt(ev);
+            }
+        }
+    }
+
+    function stopIt(ev) {
+        if (ev.preventDefault) {
+            //preventDefault()方法阻止元素发生默认的行为
+            ev.preventDefault();
+        }
+        if (ev.returnValue) {
+            //IE浏览器下用window.event.returnValue = false;实现阻止元素发生默认的行为
+            ev.returnValue = false;
+        }
+        return false;
+    }
+    window.onload = function() {
+        //实现对字符码的截获，keypress中屏蔽了这些功能按键
+        document.onkeypress = banBackSpace;
+        //对功能按键的获取
+        document.onkeydown = banBackSpace;
+
+    }
+</script>
+<script src="./index.js"></script>
+
+</html>

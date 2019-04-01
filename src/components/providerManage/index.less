@@ -1,0 +1,56 @@
+.organxBox{
+    width: 100%;
+    height: 100%;
+
+    :global {
+        .ant-card-body {
+            padding: 0;
+        }
+        .ant-tabs-tab {
+            font-weight: 700;
+            color: '#1890ff'
+        }
+        table {
+            td,th{
+                text-align: center;
+            }
+            tr:hover {
+                .ant-card-body {
+                    background-color: #e6fcff;
+                }
+            }
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            &>div:nth-child(1) { //左
+                display: flex;
+                &>div:nth-child(1){
+                    .ant-form-item {
+                        display: flex;
+                        width: 300px;
+    
+                        .ant-form-item-control-wrapper {
+                            width: 192px;
+                        }
+                    }
+                }
+                &>div:nth-child(2){
+                    .ant-form-item {
+                        display: flex;
+                        width: 230px;
+                        .ant-form-item-control-wrapper {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+        .flex::before,.flex::after {
+            display: block;
+            content: none;
+        }
+    }
+
+
+}

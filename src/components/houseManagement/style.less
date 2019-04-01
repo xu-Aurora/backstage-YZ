@@ -1,0 +1,278 @@
+.organxBox{
+    width: 100%;
+    height: 100%;
+    .header {
+        background-color: #fff;
+        color: #377FC2;
+        border: none !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 5px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        div {
+            border-bottom: 2px solid #377FC2;
+            width: 110px;
+            padding: 10px 15px;
+            font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+            font-weight: 650;
+            font-size: 16px;
+        }
+    }
+    .menubox{
+        height: 77vh;
+        border: 1px solid #DADADA;
+        table.mytable {
+            width: 100%;
+            border: 1px solid #A2A2A2;
+            border-spacing: 0;
+            tr {
+                border-bottom: 1px solid #A2A2A2;
+            }
+            td {
+                border-right: 1px solid #A2A2A2;
+                border-bottom: 1px solid #A2A2A2;
+                padding: 5px;
+            }
+            td:nth-child(even) {
+                padding-left: 10px;
+            }
+            td:nth-child(odd) {
+                text-align: center;
+            }
+            td:nth-child(1),td:nth-child(3) {
+                width: 27%;
+            }
+            tr td:last-child{ border-right: 0 ;padding: 0;}
+            tr:last-child td{ border-bottom: 0 }
+        }
+        .menubox__tree{
+            height: 60vh;
+            overflow-y: auto;
+            .province{
+                font-weight: 700;
+                font-style: normal;
+                font-size: 16px;
+                color: #333333;
+                border-bottom: 1px solid rgba(228, 228, 228, 1);
+                min-height: 42px;
+                line-height: 42px;
+                padding-left: 20px;
+                padding-right: 20px;
+                cursor: pointer;
+                .icon{
+                    float: right;
+                    line-height: 42px;
+                }
+            }
+           
+            .city{
+                font-weight: 650;
+                font-style: normal;
+                color: #333333;
+                font-size: 14px;
+                border-bottom: 1px solid rgba(228, 228, 228, 1);
+                min-height: 42px;
+                line-height: 42px;
+                padding-left: 30px;
+                padding-right: 20px;
+                cursor: pointer;
+                .icon{
+                    float: right;
+                    line-height: 42px;
+                }
+            }
+            .show{
+                background: rgba(101,181,255,0.5);
+            }
+           .garden{
+            font-weight: 400;
+            font-style: normal;
+            color: #333333;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(228, 228, 228, 1);
+            min-height: 42px;
+            line-height: 42px;
+            padding-left: 40px;
+            padding-right: 20px;
+            cursor: pointer;
+            >span{
+                display: inline-block;
+                width: 80%;
+            }
+            .icon{
+                float: right;
+                line-height: 42px;
+            }
+           }
+           .fourth{
+            font-weight: 400;
+            font-style: normal;
+            color: #333333;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(228, 228, 228, 1);
+            min-height: 42px;
+            line-height: 42px;
+            padding-left: 50px;
+            padding-right: 20px;
+            cursor: pointer;
+           }
+        }
+    }
+
+    .contentbox{
+        height: 77vh;
+        border: 1px solid #DADADA;
+        // padding: 15px;
+    }
+}
+
+.commonBox{
+    width: 100%;
+    height: 100%;
+    min-height: 82vh;
+
+    table.mytable {
+        width: 100%;
+        border: 1px solid #E9E9E9;
+        border-spacing: 0;
+        margin: 15px 0;
+        tr {
+            border-bottom: 1px solid #E9E9E9;
+        }
+        td {
+            border-right: 1px solid #E9E9E9;
+            border-bottom: 1px solid #E9E9E9;
+            padding: 5px;
+			text-align:center;
+          }
+        tr td:last-child{ border-right: 0 }
+        tr:last-child td{ border-bottom: 0 }
+    }
+
+    .header1 {
+        width: 100%;
+        padding: 10px 24px 10px 24px;
+        border-bottom: 1px solid #E0E1E0;
+        line-height: 32px;
+        .title{
+            color: #333333;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    .header2 {
+        width: 100%;
+        padding: 10px 24px 10px 24px;
+        border-bottom: 1px solid #E0E1E0;
+        .building{
+            width: 111px;
+            height: 32px;
+            font-weight: 400;
+            font-size: 13px;
+            color: #333333;
+            text-align: center;
+            line-height: 32px;
+            display: inline-block;
+            margin-right: 10px;
+            border: solid 1px rgba(121, 121, 121, 1);
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .in{
+            background: rgba(55, 127, 194, 1);
+            color: #fff;
+        }
+    }
+
+    :global {
+        .ant-upload-list{
+            display: none;
+        }
+        .ant-table-body {
+            max-height: 43vh;
+            overflow-y: auto; 
+        }
+            .ant-btn-lg{
+                height: 34px;
+            }
+            .ant-form-item-label {
+              text-align: left;
+            }
+            .ant-tabs-tab {
+                padding: 10px 16px;
+            }
+            .ant-tabs-bar {
+                margin-bottom: 15px;
+            }
+            .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+                border: none;
+                border-radius: 0;
+                padding: 8px 20px;
+                margin-bottom: 1px;
+            }
+            .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container {
+                height: auto;
+            }
+            .ant-time-picker {
+                width: 100%;
+            }
+            .ant-form-item {
+                margin-bottom: 0;
+            }
+            .ant-form table {
+                text-align: center;
+            }
+            
+            .ant-tabs-ink-bar .ant-tabs-ink-bar-animated{
+                border-bottom: none;
+            }
+
+            .ant-input-affix-wrapper {
+                height: 32px;
+            }
+            .ant-tabs-tab-active.ant-tabs-tab{
+                color: #1890ff;
+                border: none;
+                font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+                font-weight: 650;
+                font-size: 16px;
+            }
+            .ant-btn .ant-btn-primary .ant-btn-lg{
+                background: #00a8eb;
+            }
+
+            //Tabs样式
+            .ant-tabs-bar {
+                border-bottom: 1px solid #fff;
+                margin: 0;
+            }
+            .ant-tabs-nav .ant-tabs-tab {
+                background-color: #fff;
+                padding: 3px 0;
+                width: 111px;
+                text-align: center;
+                margin: 0;
+                height: 32px;
+                border: 1px solid rgba(121, 121, 121, 1);
+                margin-right: 10px;
+                font-size: 12px;
+            }
+            .ant-tabs-nav .ant-tabs-tab-active {
+                background-color: #1890ff;
+                color: #FFF;
+            }
+            .ant-tabs-ink-bar {
+                // background-color: rgba(174, 174, 174, 1);
+                height: 0;
+            }
+            .ant-tabs-nav-wrap {
+                margin-bottom: 0;
+            }
+            table {
+                td,th{
+                    text-align: center;
+                }
+            }
+
+    }
+
+}

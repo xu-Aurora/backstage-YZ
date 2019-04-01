@@ -1,0 +1,114 @@
+@font_family: "Microsoft YaHei";
+@font_color: #FFF;
+@font_14: 14px;
+@bg_color:#2f4355;
+.layout {
+  height: 100%;
+  overflow: hidden;
+
+  :global {
+    .ant-layout {
+      background-color: #F0F0F0;
+    }
+    .ant-layout-header{
+      background: #FFF;
+      box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 5px;
+      padding: 0 40px 0 0;
+      height: 60px;
+      line-height: 60px;
+      :global{
+           span{
+            font-size: @font_14;
+            font-family: @font_family;
+          //  color: @font_color;
+           }
+           a{
+            font-size: @font_14;
+            font-family: @font_family;
+          //  color: @font_color;
+           }
+        }
+    }
+    .use-msgs {
+        display: inline-block;
+        padding-left: 20px;
+        width: 100%;
+        position: relative;
+        div{
+            display: inline-block;
+            text-align: center;
+            .anticon-bell,
+            .anticon-bars,
+            .anticon-user {
+                font-size: 20px;
+                color: #adb8c1;
+            }
+        }
+        div:nth-of-type(1) {
+            cursor: pointer;
+        }
+        div:nth-of-type(2) {
+            float: right;
+        }
+        div:nth-of-type(3) {
+            margin-right: 20px;
+            float: right;
+            a{
+                height: 100%;
+                display: block;
+            }
+        }
+        div:nth-of-type(4) {
+          float: right;
+        }
+
+        .ant-dropdown-trigger {
+          height: 60px;
+        }
+    }
+    .ant-layout-content {
+      margin: 14px 16px 0;
+      padding: 24px;
+      background: #fff;
+      // min-Height: 280px;
+    }
+    .ant-layout-sider{
+    }
+
+    .km-logo {
+        width: 100%;
+        height: 80px;
+        cursor: pointer;
+        overflow: hidden;
+        font-size: 22px;
+        // margin-left: 23px;
+        color: white;
+        line-height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ant-layout-sider-collapsed {
+      .anticon {
+        font-size: 16px;
+      }
+      .nav-text {
+        display: none;
+      }
+    }
+    .ant-layout-sider,
+    .ant-menu-item {
+        background: @bg_color;
+    }
+    .ant-menu-item:hover {
+        background: #108ee9;
+    }
+    .ant-menu-submenu-inline.ant-menu-submenu {
+        background: @bg_color;
+    }
+    .ant-menu-root .ant-menu-item {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}

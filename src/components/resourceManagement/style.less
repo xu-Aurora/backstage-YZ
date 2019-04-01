@@ -1,0 +1,117 @@
+.organxBox{
+    width: 100%;
+    height: 100%;
+    .header {
+        background-color: #fff;
+        color: #377FC2;
+        border: none !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 5px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        div {
+            border-bottom: 2px solid #377FC2;
+            width: 110px;
+            padding: 10px 15px;
+            font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+            font-weight: 650;
+            font-size: 16px;
+        }
+    }
+    .menubox{
+        padding: 15px;
+        height: 77vh;
+        border: 1px solid #DADADA;
+        table.mytable {
+            width: 100%;
+            border: 1px solid #A2A2A2;
+            border-spacing: 0;
+            tr {
+                border-bottom: 1px solid #A2A2A2;
+            }
+            td {
+                border-right: 1px solid #A2A2A2;
+                border-bottom: 1px solid #A2A2A2;
+                padding: 0px;
+                text-align: center;
+                cursor: pointer;
+            }
+            td:nth-child(even) {
+                text-align: left;
+                padding-left: 10px;
+            }
+            tr td:last-child{ border-right: 0 ;padding: 0;}
+            tr:last-child td{ border-bottom: 0 }
+        }
+        .menubox__tree{
+            height: 70vh;
+            overflow-y: auto;
+        }
+    }
+    .contentbox{
+        height: 77vh;
+        border: 1px solid #DADADA;
+        padding: 15px;
+    }
+    :global {
+        .upload-list-inline .ant-upload-list-item {
+           float: left;
+           width: 96px;
+       }
+       .anticon-eye-o {
+           display: none
+       }
+       .upload-list-inline .ant-upload-animate-enter {
+       animation-name: uploadAnimateInlineIn;
+       }
+       .upload-list-inline .ant-upload-animate-leave {
+       animation-name: uploadAnimateInlineOut;
+       }
+       .upload-list-inline:first-child {
+             margin-left: 0;
+       }
+       .ant-tabs-bar {
+            border-bottom: 0;
+            margin: 0 0 1px 0;
+       }
+       .ant-tabs-nav-wrap {
+           padding-left: 20px;
+       }
+       .ant-form-item {
+               margin-bottom: 0;
+           }
+           .ant-tabs-nav-wrap,
+           .ant-tabs-ink-bar .ant-tabs-ink-bar-animated{
+               border-bottom: none;
+           }
+           .ant-tabs-nav .ant-tabs-tab:last-child{
+               width: 100px;
+               font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+               font-weight: 650;
+               font-style: normal;
+               font-size: 16px;
+               color: #377FC2;
+
+           }
+           .ant-btn-primary {
+               width: 100px;
+           }
+           .ant-btn .ant-btn-primary .ant-btn-lg{
+               background: #00a8eb;
+           }
+           .ant-input-suffix {
+               right: 0;
+               height: 100%;
+               width: 25px;
+               line-height: 29px;
+               color: #fff;
+               text-align: center;
+               background: #00a8eb;
+           }
+        //    table{
+        //        text-align: center;
+        //        th {
+        //            text-align: center;
+        //        }
+        //    }
+   }
+}

@@ -1,0 +1,18 @@
+# Project ignore files
+/node_modules/
+/.settings
+/.classpath
+/.project
+/.tomcatplugin
+/target
+/work
+/.tomcatplugin
+/src/main/webapp/.#webclasspath
+*/bin/
+*/.settings
+*/.classpath
+*/.project
+/.class
+.idea
+quick4j.iml
+/dist/
